@@ -8,16 +8,22 @@ namespace ComicBookGallery.Controllers
 {
     public class ComicBooksController : Controller   //Inherits from Controller base
     {
-        public ContentResult Detail()
+        public ActionResult Detail()
         {
 
                 if (DateTime.Today.DayOfWeek == DayOfWeek.Monday)    //Monday is a enumeration value)
                  {
 
-                         return  new RedirectResult("/");
+                return Redirect("/");
                  }
-                
-              //  Content = "Hello from the comic books controller!"
+
+
+            return Content("Hello from the comic books controller! ");
+
+            
+
+
+              
 
 
             
