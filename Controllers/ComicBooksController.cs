@@ -11,7 +11,7 @@ namespace ComicBookGallery.Controllers
         public ActionResult Detail()
         {
 
-                if (DateTime.Today.DayOfWeek == DayOfWeek.Monday)    //Monday is a enumeration value)
+                if (DateTime.Today.DayOfWeek == DayOfWeek.Tuesday)    //Monday is a enumeration value)
                  {
 
                 return Redirect("/");
