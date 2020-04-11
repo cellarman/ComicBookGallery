@@ -6,7 +6,7 @@ using System.Web;
 namespace ComicBookGallery.Models
 {
     public class ComicBook
-    {
+    {        //structure of data (Data Modeling - think of nouns)
         public int Id { get; set; }
         public string SeriesTitle { get; set; }
         public int IssueNumber { get; set; }
@@ -19,7 +19,7 @@ namespace ComicBookGallery.Models
 
             get
             {
-                return SeriesTitle + " #" + IssueNumber;
+                return SeriesTitle + " #" + IssueNumber;  //Is read only because no setter
             }
 
         }
